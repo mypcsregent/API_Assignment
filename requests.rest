@@ -1,0 +1,32 @@
+GET http://localhost:4000
+###
+
+GET http://localhost:4000/blog
+###
+
+POST http://localhost:4000/blog
+Content-Type: application/json
+
+{
+    "title" : "First Blog",
+    "description": "Desc",
+    "date": "20 Aug 2021"
+}
+###
+
+POST http://localhost:4000/product
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name" : "Product 1"
+    
+}
+
+###
+
+GET http://localhost:4000/product
+
+###
+
+DELETE http://localhost:4000/product/2
